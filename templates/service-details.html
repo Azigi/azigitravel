@@ -1,0 +1,120 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+  Work Abroad Services - Azigi Travel
+{% endblock title %}
+
+<body class="service-details-page">
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section class="service-hero section bg-dark text-center py-2">
+    <div class="container">
+      <h1 class="mb-2 text-white">Work Abroad Services</h1>
+      <p class="lead text-white">Your trusted partner in securing international job opportunities, work permits, and visas.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Sidebar Section -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box mb-4">
+            <h4>Services List</h4>
+            <ul class="services-list">
+              <li><a href="{% url 'service-work-abroad' %}" class="active"><i class="bi bi-arrow-right-circle"></i> Work Abroad Services</a></li>
+              <li><i class="bi bi-arrow-right-circle"></i> Document Preparation</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Visa Application Support</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Job Matching</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Travel Assistance</li>
+            </ul>
+          </div>
+
+          <div class="help-box d-flex flex-column align-items-center text-center p-4 border rounded">
+            <i class="bi bi-headset help-icon mb-3"></i>
+            <h4>Have a Question?</h4>
+            <p><i class="bi bi-telephone me-2"></i> <strong>+233 544 269 882</strong></p>
+            <p><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">azigitravel@gmail.com</a></p>
+          </div>
+        </div>
+        <!-- End Sidebar Section -->
+
+        <!-- Main Content Section -->
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <figure><img width="800" src="{% static 'assets/img/banner.jpg'%}" alt="Work Abro Services" class="img-fluid mb-4 mt-0 rounded"></figure>
+     
+          <h3>Comprehensive Work Abroad Services</h3>
+          <p>
+            At Azigi Travel and Tour, we specialize in helping you achieve your dreams of working abroad by guiding you through every step of the process. From gathering the required documents to securing your work permit and visa, we ensure a smooth and hassle-free experience.
+          </p>
+         <h4>Our Process</h4>
+        
+<div class="process-steps">
+  <div class="step">
+    <i class="bi bi-file-earmark-text text-primary"></i>
+    <h5 id="Document-Preparation">Document Preparation</h5>
+    <p>We assist in gathering essential documents such as:</p>
+    <ul>
+      <li>Scanned copy of your passport</li>
+      <li>Curriculum Vitae (CV) or resume</li>
+      <li>Proof of work experience or recommendations</li>
+      <li>Educational certificates and qualifications</li>
+      <li>Proof of funds (if applicable)</li>
+    </ul>
+  </div>
+  <div class="step">
+    <i class="bi bi-briefcase text-primary"></i>
+    <h5>Job Matching</h5>
+    <p>We connect you with reputable employers abroad, ensuring suitable placements tailored to your skills and experience.</p>
+  </div>
+  <div class="step">
+    <i class="bi bi-card-checklist text-primary"></i>
+    <h5>Work Permit Application</h5>
+    <p>We prepare and submit your work permit application, ensuring all requirements are met for approval.</p>
+  </div>
+  <div class="step">
+    <i class="bi bi-geo-alt text-primary"></i>
+    <h5>Visa Processing</h5>
+    <p>We handle the visa application process for a smooth transition to your destination country.</p>
+  </div>
+  <div class="step">
+    <i class="bi bi-airplane text-primary"></i>
+    <h5 id="Travel-Assistance">Travel Assistance</h5>
+    <p>We provide travel arrangements and post-arrival support to ensure a stress-free journey.</p>
+  </div>
+</div>
+
+
+          <h4>Why Choose Us?</h4>
+          <p>
+            Our experienced team ensures all placements are legitimate, compliant with immigration laws, and tailored to your career aspirations. We work only with trusted employers to prioritize your safety and success.
+          </p>
+
+          <h4>Get Started Today</h4>
+          <p>
+            Reach out to us for a consultation and take the first step toward your dream of working abroad. Let us guide you every step of the way!
+          </p>
+        </div>
+        <!-- End Main Content Section -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /Service Details Section -->
+
+</main>
+
+{% endblock main %}
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+  Study Abroad Services - Azigi Travel
+{% endblock title %}
+
+<body class="service-details-page">
+
+{% block main %}
+
+<main class="main">
+  
+  <!-- Hero Section -->
+  <section class="service-hero section bg-dark text-center py-2">
+    <div class="container text-white">
+      <h1 class="mb-3 text-white">Study Abroad Services</h1>
+      <p class="lead">Empowering students to achieve their dreams of international education.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Sidebar Section -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box mb-4">
+            <h4>Services List</h4>
+            <ul class="services-list">
+              <li><a href="{% url 'service_study_abroad' %}" class="active"><i class="bi bi-arrow-right-circle"></i> Study Abroad Services</a></li>
+              <li><i class="bi bi-arrow-right-circle"></i> University Application Guidance</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Document Preparation</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Visa Application Support</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Pre-departure Assistance</li>
+            </ul>
+          </div>
+
+          <div class="help-box d-flex flex-column align-items-center text-center p-4 border rounded">
+            <i class="bi bi-headset help-icon mb-3"></i>
+            <h4>Have a Question?</h4>
+             <p><i class="bi bi-telephone me-2"></i> <strong>+233 544 269 882</strong></p>
+            <p><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">azigitravel@gmail.com</a></p>
+          </div>
+        </div>
+        <!-- End Sidebar Section -->
+
+        <!-- Main Content Section -->
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+         
+          <figure><img width="800" src="{% static 'assets/img/banner.jpg'%}" alt="Study Abroad Services" class="img-fluid mb-4 mt-0 rounded"></figure>
+          <h3>Comprehensive Study Abroad Services</h3>
+          <p>
+            At Azigi Travel and Tour, we help students achieve their dreams of pursuing higher education abroad. From finding the right university to securing your student visa, we guide you through every step of the process to ensure your success.
+          </p>
+          <h4>Our Process</h4>
+          <div class="process-steps">
+            <div class="step">
+              <i class="bi bi-search text-primary"></i>
+              <h5>University Selection</h5>
+              <p>We help you choose the best university and program that match your academic goals and preferences.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-file-earmark-text text-primary"></i>
+              <h5 id="Document-Preparation">Document Preparation</h5>
+              <p>We assist in preparing essential documents, including:</p>
+              <ul>
+                <li>Academic transcripts and certificates</li>
+                <li>Statement of Purpose (SOP)</li>
+                <li>Letters of Recommendation</li>
+                <li>Valid passport</li>
+                <li>Proof of financial support</li>
+              </ul>
+            </div>
+            <div class="step">
+              <i class="bi bi-card-checklist text-primary"></i>
+              <h5>Application Submission</h5>
+              <p>We guide you in completing and submitting university applications accurately and on time.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-geo-alt text-primary"></i>
+              <h5>Visa Application Support</h5>
+              <p>We assist with the student visa process, ensuring all requirements are met for a smooth approval.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-airplane text-primary"></i>
+              <h5 id="Pre-departure-Assistance">Pre-departure Assistance</h5>
+              <p>We provide guidance on accommodation, travel arrangements, and cultural adaptation for a stress-free start to your academic journey.</p>
+            </div>
+          </div>
+
+          <h4>Why Choose Us?</h4>
+          <p>
+            Our experienced team has helped countless students secure placements at top universities worldwide. We are committed to your success and provide personalized services to make your study-abroad journey smooth and enjoyable.
+          </p>
+
+          <h4>Get Started Today</h4>
+          <p>
+            Contact us for a consultation and take the first step toward your dream of studying abroad. Together, we’ll make it happen!
+          </p>
+        </div>
+        <!-- End Main Content Section -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /Service Details Section -->
+
+</main>
+
+{% endblock main %}
+
+</body>
+</html>

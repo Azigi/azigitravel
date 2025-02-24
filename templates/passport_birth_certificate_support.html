@@ -1,0 +1,114 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+  Passport & Birth Certificate Support - Azigi Travel
+{% endblock title %}
+
+<body class="service-details-page">
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section class="service-hero section bg-dark text-center py-2">
+    <div class="container">
+      <h1 class="mb-3 text-white">Passport & Birth Certificate Support</h1>
+      <p class="lead text-white">Fast-tracking your essential documents for travel and identity.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Sidebar Section -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box mb-4">
+            <h4>Services List</h4>
+            <ul class="services-list">
+              <li><a href="{% url 'service_passport_birth_certificate' %}" class="active"><i class="bi bi-arrow-right-circle"></i> Passport & Birth Certificate Support</a></li>
+              <li><i class="bi bi-arrow-right-circle"></i> Passport Application Assistance</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Birth Certificate Issuance</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Document Fast-Tracking</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Guidance on Supporting Documents</li>
+            </ul>
+          </div>
+
+          <div class="help-box d-flex flex-column align-items-center text-center p-4 border rounded">
+            <i class="bi bi-headset help-icon mb-3"></i>
+            <h4>Have a Question?</h4>
+             <p><i class="bi bi-telephone me-2"></i> <strong>+233 544 269 882</strong></p>
+            <p><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">azigitravel@gmail.com</a></p>
+          </div>
+        </div>
+        <!-- End Sidebar Section -->
+
+        <!-- Main Content Section -->
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+             <figure><img width="800" src="{% static 'assets/img/banner.jpg'%}" alt="Passport & Birth Certificate Support" class="img-fluid mb-4 mt-0 rounded"></figure>
+          
+          <h3>Fast-Track Passport & Birth Certificate Support</h3>
+          <p>
+            At Azigi Travel and Tour, we specialize in assisting with passport and birth certificate applications, ensuring quick and efficient processing. Whether you're planning a trip or need official identification, we’ve got you covered.
+          </p>
+          <h4>Our Process</h4>
+          <div class="process-steps">
+            <div class="step">
+              <i class="bi bi-file-earmark-text text-primary"></i>
+              <h5>Document Collection</h5>
+              <p>We assist you in gathering all necessary documents, such as:</p>
+              <ul>
+                <li>Valid identification</li>
+                <li>Proof of address</li>
+                <li>Birth certificates (for passports)</li>
+                <li>Marriage certificate (if applicable)</li>
+              </ul>
+            </div>
+            <div class="step">
+              <i class="bi bi-clock text-primary"></i>
+              <h5>Fast-Track Services</h5>
+              <p>
+                <strong>Passport:</strong> Receive your passport in less than 1 week.<br>
+                <strong>Birth Certificate:</strong> Get your birth certificate in under 2 weeks.
+              </p>
+            </div>
+            <div class="step">
+              <i class="bi bi-hand-index-thumb text-primary"></i>
+              <h5>Application Submission</h5>
+              <p>We assist in submitting your application to the relevant authorities and ensure it is processed without delays.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-envelope-check text-primary"></i>
+              <h5>Confirmation & Delivery</h5>
+              <p>We provide regular updates on your application and ensure the document is delivered to you promptly.</p>
+            </div>
+          </div>
+
+          <h4>Why Choose Us?</h4>
+          <p>
+            Our fast-track services are designed to save you time and reduce stress. With years of experience and a trusted network, we ensure reliable and efficient processing of your applications.
+          </p>
+
+          <h4>Get Started Today</h4>
+          <p>
+            Contact us for personalized assistance with your passport or birth certificate application. Let us help you meet your deadlines and get the documents you need!
+          </p>
+        </div>
+        <!-- End Main Content Section -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /Service Details Section -->
+
+</main>
+
+{% endblock main %}
+
+</body>
+</html>

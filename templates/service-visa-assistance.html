@@ -1,0 +1,153 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+  Visa Assistance Services - Azigi Travel
+{% endblock title %}
+
+<body class="service-details-page">
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section class="service-hero section bg-dark text-center py-2">
+    <div class="container">
+      <h1 class="mb-3 text-white">Visa Assistance Services</h1>
+      <p class="lead text-white">Simplifying your visa process for travel, work, or study abroad.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Sidebar Section -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box mb-4">
+            <h4>Services List</h4>
+            <ul class="services-list">
+              <li><a href="{% url 'service_visa_assistance' %}" class="active"><i class="bi bi-arrow-right-circle"></i> Visa Assistance Services</a></li>
+              <li><i class="bi bi-arrow-right-circle"></i> Travel Visa Applications</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Work Visa Support</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Study Visa Applications</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Visa Renewal Services</li>
+            </ul>
+          </div>
+
+          <div class="help-box d-flex flex-column align-items-center text-center p-4 border rounded">
+            <i class="bi bi-headset help-icon mb-3"></i>
+            <h4>Have a Question?</h4>
+             <p><i class="bi bi-telephone me-2"></i> <strong>+233 544 269 882</strong></p>
+            <p><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">azigitravel@gmail.com</a></p>
+          </div>
+        </div>
+        <!-- End Sidebar Section -->
+
+        <!-- Main Content Section -->
+<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+  <!-- Banner Image -->
+  <figure>
+    <img width="800" src="{% static 'assets/img/banner.jpg' %}" alt="Visa Assistance Services" class="img-fluid mb-4 rounded shadow">
+  </figure>
+
+  <!-- Section Title -->
+  <h3 class="section-heading text-primary">Comprehensive Visa Assistance Services</h3>
+  <p class="lead">
+    At Azigi Travel and Tour, we specialize in simplifying the visa application process, ensuring you meet all requirements to secure your visa for travel, work, or study abroad.
+  </p>
+
+  <!-- Our Process -->
+  <h4 class="subheading mt-4">Our Process</h4>
+  <div class="process-steps">
+
+    <!-- Step 1: Document Preparation -->
+    <div class="step d-flex align-items-start">
+      <i class="bi bi-file-earmark-text text-primary me-3"></i>
+      <div>
+        <h5>Document Preparation</h5>
+        <p>We assist in gathering all the required documents, including:</p>
+        <ul>
+          <li>Completed visa application form</li>
+          <li>Valid passport</li>
+          <li>Passport-sized photographs</li>
+          <li>Proof of financial support</li>
+          <li>Invitation letter (if applicable)</li>
+          <li>Travel itinerary</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 2: Requirement Review -->
+    <div class="step d-flex align-items-start mt-3">
+      <i class="bi bi-check2-square text-primary me-3"></i>
+      <div>
+        <h5>Requirement Review</h5>
+        <p>We thoroughly review your application to ensure compliance with the visa requirements of your destination country.</p>
+      </div>
+    </div>
+
+    <!-- Step 3: Application Submission -->
+    <div class="step d-flex align-items-start mt-3">
+      <i class="bi bi-card-checklist text-primary me-3"></i>
+      <div>
+        <h5>Application Submission</h5>
+        <p>We assist in submitting your application to the relevant consulate or embassy, ensuring accuracy and timely delivery.</p>
+      </div>
+    </div>
+
+    <!-- Step 4: Interview Preparation -->
+    <div class="step d-flex align-items-start mt-3">
+      <i class="bi bi-shield-check text-primary me-3"></i>
+      <div>
+        <h5>Interview Preparation</h5>
+        <p>We provide guidance on how to prepare for visa interviews, ensuring you are confident and well-prepared.</p>
+      </div>
+    </div>
+
+    <!-- Step 5: Post-Approval Assistance -->
+    <div class="step d-flex align-items-start mt-3">
+      <i class="bi bi-airplane text-primary me-3"></i>
+      <div>
+        <h5>Post-Approval Assistance</h5>
+        <p>Once your visa is approved, we help with any additional requirements, such as travel insurance and other documentation.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Why Choose Us -->
+  <h4 class="subheading mt-5">Why Choose Us?</h4>
+  <p class="mb-4">
+    Our team is experienced in handling various types of visa applications, ensuring a seamless process tailored to your specific needs. We are committed to reducing the stress and uncertainty of visa applications.
+  </p>
+
+  <!-- Call-to-Action -->
+  <h4 class="subheading">Get Started Today</h4>
+  <p>
+    Contact us for a consultation and take the first step toward achieving your travel goals. Let us simplify your visa process and bring your plans to life!
+  </p>
+  <div class="text-center mt-4">
+    <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+  </div>
+
+</div>
+<!-- End Main Content Section -->
+
+
+      </div>
+    </div>
+  </section>
+  <!-- /Service Details Section -->
+
+</main>
+
+{% endblock main %}
+
+</body>
+</html>

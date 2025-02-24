@@ -1,0 +1,110 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+  Flight Reservation Services - Azigi Travel
+{% endblock title %}
+
+<body class="service-details-page">
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section class="service-hero section bg-dark text-center py-2">
+    <div class="container">
+      <h1 class="mb-3 text-white">Flight Reservation Services</h1>
+      <p class="lead text-white">Your trusted partner for affordable and convenient flight bookings.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Sidebar Section -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box mb-4">
+            <h4>Services List</h4>
+            <ul class="services-list">
+              <li><a href="{% url 'service_flight_reservation' %}" class="active"><i class="bi bi-arrow-right-circle"></i> Flight Reservation Services</a></li>
+              <li><i class="bi bi-arrow-right-circle"></i> One-Way Flight Reservations</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Round-Trip Bookings</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Group Travel Arrangements</li>
+              <li><i class="bi bi-arrow-right-circle"></i> Last-Minute Flights</li>
+            </ul>
+          </div>
+
+          <div class="help-box d-flex flex-column align-items-center text-center p-4 border rounded">
+            <i class="bi bi-headset help-icon mb-3"></i>
+            <h4>Have a Question?</h4>
+             <p><i class="bi bi-telephone me-2"></i> <strong>+233 544 269 882</strong></p>
+            <p><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">azigitravel@gmail.com</a></p>
+          </div>
+        </div>
+        <!-- End Sidebar Section -->
+
+        <!-- Main Content Section -->
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        
+          <figure><img width="800" src="{% static 'assets/img/banner.jpg'%}" alt="Flight Reservation Services" class="img-fluid mb-4 mt-0 rounded"></figure>
+          <h3>Reliable Flight Reservation Services</h3>
+          <p>
+            At Azigi Travel and Tour, we make booking your flights stress-free and affordable. Whether you’re traveling for business, leisure, or relocation, we ensure you get the best deals and seamless service.
+          </p>
+          <h4>Our Process</h4>
+          <div class="process-steps">
+            <div class="step">
+              <i class="bi bi-search text-primary"></i>
+              <h5>Flight Search</h5>
+              <p>We search for the best available flights that match your travel preferences and budget.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-hand-index-thumb text-primary"></i>
+              <h5>Custom Recommendations</h5>
+              <p>We provide personalized flight options based on your needs, including direct flights, layovers, or specific airlines.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-credit-card text-primary"></i>
+              <h5>Booking Confirmation</h5>
+              <p>We handle the booking process, ensuring your seat is reserved and all details are accurate.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-envelope-check text-primary"></i>
+              <h5>Ticket Delivery</h5>
+              <p>Once your booking is confirmed, we deliver your e-ticket to your email promptly.</p>
+            </div>
+            <div class="step">
+              <i class="bi bi-info-circle text-primary"></i>
+              <h5>Post-Booking Support</h5>
+              <p>We provide updates on flight schedules, manage changes, and assist with cancellations if needed.</p>
+            </div>
+          </div>
+
+          <h4>Why Choose Us?</h4>
+          <p>
+            With access to global airline networks and the latest deals, we ensure you receive the best value for your money. Our team is dedicated to providing exceptional customer service, making your travel planning smooth and efficient.
+          </p>
+
+          <h4>Get Started Today</h4>
+          <p>
+            Contact us for personalized flight booking services. Wherever you’re headed, we’re here to make your journey worry-free!
+          </p>
+        </div>
+        <!-- End Main Content Section -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /Service Details Section -->
+
+</main>
+
+{% endblock main %}
+
+</body>
+</html>
